@@ -1,0 +1,15 @@
+version: '3.3'
+services:
+  flowlink-ui:
+    container_name: flowlink-ui
+    build: .
+    command: yarn start
+    volumes:
+      - .:/app
+    ports:
+      - "3001:3000"
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "1k"
+        max-file: "3"
