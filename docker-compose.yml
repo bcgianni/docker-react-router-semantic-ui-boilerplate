@@ -1,7 +1,7 @@
 version: '3.3'
 services:
-  flowlink-ui:
-    container_name: flowlink-ui
+  react-ui:
+    container_name: react-ui
     build: .
     command: yarn start
     volumes:
